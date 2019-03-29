@@ -1,0 +1,36 @@
+{
+  "name": "truefit-http-utils",
+  "version": "1.0.0",
+  "description": "a handy wrapper around axios",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "node tools/build.js",
+    "prepare": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrueFit/http-utils.git"
+  },
+  "author": "Josh Gretz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TrueFit/http-utils/issues"
+  },
+  "homepage": "https://github.com/TrueFit/http-utils#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.3",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-react": "^7.12.4",
+    "nodemon": "^1.18.10",
+    "shelljs": "^0.8.3"
+  }
+}
