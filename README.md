@@ -35,7 +35,6 @@ Once this configuration is setup, you can make http calls from any file in the a
 | baseHeaders | json object | shared headers to be sent with each request |
 | transformHeaders | function | hook called on creation of each request, must return a json object - stored at headers in config |
 | configureInstance | function | hook called on creation of each request, it is passed the axios instance directly after it's creation |
-||||
 
 * You can find the full array of options that can be passed in the config on the axios site.
 * Each hook is also provided with the url of the specific request being created
@@ -80,7 +79,6 @@ configureHttp({
 |-----------|------|-------------|
 | url | string (required) | the relative url for the request |
 | configure | function (optional) | hook to provide the configuration for this particular call |
-||||
 
 ```javascript
 import {get} from 'truefit-http-utils';
@@ -99,7 +97,6 @@ const response = await get('/users', () => ({
 | url | string (required) | the relative url for the request |
 | data | any (required) | the data to use in the body of the request |
 | configure | function (optional) | hook to provide the configuration for this particular call |
-||||
 
 ```javascript
 import {post} from 'truefit-http-utils';
@@ -114,7 +111,6 @@ const response = await post('/users', {name: 'Jim Bob'});
 | url | string (required) | the relative url for the request |
 | data | any (required) | the data to use in the body of the request |
 | configure | function (optional) | hook to provide the configuration for this particular call |
-||||
 
 ```javascript
 import {patch} from 'truefit-http-utils';
@@ -129,7 +125,6 @@ const response = await patch('/users', {id: 1, name: 'Jim Bob'});
 | url | string (required) | the relative url for the request |
 | data | any (required) | the data to use in the body of the request |
 | configure | function (optional) | hook to provide the configuration for this particular call |
-||||
 
 ```javascript
 import {put} from 'truefit-http-utils';
@@ -143,7 +138,6 @@ const response = await put('/users', {name: 'Jim Bob'});
 |-----------|------|-------------|
 | url | string (required) | the relative url for the request |
 | configure | function (optional) | hook to provide the configuration for this particular call |
-||||
 
 ```javascript
 import {del} from 'truefit-http-utils';
