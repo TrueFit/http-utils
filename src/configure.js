@@ -1,7 +1,7 @@
 import {identity, consumer} from './constants';
 
 // internal api
-export const baseConfiguration = null;
+export const baseConfiguration = {};
 
 // public api
 export const configureHttp = ({
