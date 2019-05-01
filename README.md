@@ -1,17 +1,17 @@
-# truefit-http-utils
+# @truefit/http-utils
 
 This library is a lightweight wrapper around [axios](https://github.com/mzabriskie/axios). It provides a set of utility functions to enable making http requests.
 
 ## Install
 
 ```bash
-npm install truefit-http-utils
+npm install @truefit/http-utils
 ```
 
 or
 
 ```bash
-yarn add truefit-http-utils
+yarn add @truefit/http-utils
 ```
 
 ## Use
