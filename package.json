@@ -1,6 +1,6 @@
 {
   "name": "@truefit/http-utils",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "a handy wrapper around axios",
   "main": "lib/index.js",
   "scripts": {
