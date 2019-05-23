@@ -1,6 +1,6 @@
 {
   "name": "@truefit/http-utils",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "a handy wrapper around axios",
   "main": "lib/index.js",
   "scripts": {
@@ -14,7 +14,10 @@
     "type": "git",
     "url": "git+https://github.com/TrueFit/http-utils.git"
   },
-  "author": "Josh Gretz",
+  "authors": [
+    "jgretz",
+    "adamkirkton"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/TrueFit/http-utils/issues"
