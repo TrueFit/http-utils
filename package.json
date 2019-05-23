@@ -7,6 +7,9 @@
     "compile": "node tools/build.js",
     "prepare": "npm run compile"
   },
+  "browserslist": [
+    "defaults"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TrueFit/http-utils.git"
