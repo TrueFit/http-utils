@@ -1,6 +1,6 @@
 {
   "name": "@truefit/http-utils",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "a handy wrapper around axios",
   "main": "lib/index.js",
   "scripts": {
@@ -16,7 +16,8 @@
   },
   "authors": [
     "jgretz",
-    "adamkirkton"
+    "adamkirkton",
+    "nauticalcoder"
   ],
   "license": "MIT",
   "bugs": {
