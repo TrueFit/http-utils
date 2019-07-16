@@ -44,7 +44,7 @@ Once this configuration is setup, you can make http calls from any file in the a
 At it's simplest, you just need to supply the baseURL to be used.
 
 ```javascript
-import {configureHttp} from 'truefit-http-utils';
+import {configureHttp} from '@truefit/http-utils';
 
 configureHttp({
   baseConfig: {
@@ -56,7 +56,7 @@ configureHttp({
 That said, apps are rarely this simple. Often you will need to provide a piece of data or authentication token that can only be known at runtime. To account for these situations, the configuration properties (full list above), provide hooks that are invoked on the creation of each request.
 
 ```javascript
-import {configureHttp} from 'truefit-http-utils';
+import {configureHttp} from '@truefit/http-utils';
 
 configureHttp({
   baseConfig: {
@@ -81,7 +81,7 @@ configureHttp({
 | configure | function (optional) | hook to provide the configuration for this particular call |
 
 ```javascript
-import {get} from 'truefit-http-utils';
+import {get} from '@truefit/http-utils';
 
 const response = await get('/users');
 
@@ -99,7 +99,7 @@ const response = await get('/users', () => ({
 | configure | function (optional) | hook to provide the configuration for this particular call |
 
 ```javascript
-import {post} from 'truefit-http-utils';
+import {post} from '@truefit/http-utils';
 
 const response = await post('/users', {name: 'Jim Bob'});
 ```
@@ -113,7 +113,7 @@ const response = await post('/users', {name: 'Jim Bob'});
 | configure | function (optional) | hook to provide the configuration for this particular call |
 
 ```javascript
-import {patch} from 'truefit-http-utils';
+import {patch} from '@truefit/http-utils';
 
 const response = await patch('/users', {id: 1, name: 'Jim Bob'});
 ```
@@ -127,7 +127,7 @@ const response = await patch('/users', {id: 1, name: 'Jim Bob'});
 | configure | function (optional) | hook to provide the configuration for this particular call |
 
 ```javascript
-import {put} from 'truefit-http-utils';
+import {put} from '@truefit/http-utils';
 
 const response = await put('/users', {name: 'Jim Bob'});
 ```
@@ -140,7 +140,7 @@ const response = await put('/users', {name: 'Jim Bob'});
 | configure | function (optional) | hook to provide the configuration for this particular call |
 
 ```javascript
-import {del} from 'truefit-http-utils';
+import {del} from '@truefit/http-utils';
 
 const response = await del('/users/1');
 ```
