@@ -1,11 +1,16 @@
 {
   "name": "@truefit/http-utils",
-  "version": "1.0.9",
+  "version": "2.0.0",
   "description": "a handy wrapper around axios",
   "main": "lib/index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "compile": "node tools/build.js",
-    "prepare": "npm run compile"
+    "format": "prettier --write **/*.{js,ts,tsx,json}",
+    "lint": "eslint src/**/*.ts",
+    "clean-build": "rm -rf ./build",
+    "compile": "tsc -p .",
+    "build": "yarn format && yarn lint && yarn clean-build && yarn compile && yarn copy-templates",
+    "prepublishOnly": "yarn build"
   },
   "browserslist": [
     "defaults"
@@ -25,19 +30,19 @@
   },
   "homepage": "https://github.com/TrueFit/http-utils#readme",
   "dependencies": {
-    "axios": "^0.18.1"
+    "axios": "^0.19.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.4",
-    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.4.4",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-react": "^7.12.4",
-    "nodemon": "^1.19.0",
-    "shelljs": "^0.8.3"
+    "@types/node": "^13.7.6",
+    "@typescript-eslint/eslint-plugin": "^2.21.0",
+    "@typescript-eslint/parser": "^2.21.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-typescript-prettier": "^1.4.2",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.2"
   }
 }
