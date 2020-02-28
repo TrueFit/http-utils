@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "a handy wrapper around axios",
   "main": "lib/index.js",
-  "types": "index.d.ts",
+  "types": "lib/index.d.ts",
   "scripts": {
     "format": "prettier --write **/*.{js,ts,tsx,json}",
     "lint": "eslint src/**/*.ts",
