@@ -9,7 +9,7 @@
     "lint": "eslint src/**/*.ts",
     "clean-build": "rm -rf ./build",
     "compile": "tsc -p .",
-    "build": "yarn format && yarn lint && yarn clean-build && yarn compile && yarn copy-templates",
+    "build": "yarn format && yarn lint && yarn clean-build && yarn compile",
     "prepublishOnly": "yarn build"
   },
   "browserslist": [
