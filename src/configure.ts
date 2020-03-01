@@ -1,7 +1,7 @@
 import {Configuration} from './types';
 import {identity, consumer} from './util';
 
-// this is the singleton shared confiiguration the library uses to generate instances
+// this is the singleton shared configuration the library uses to generate instances
 export const sharedConfig: Configuration = {};
 
 export default (config: Configuration): void => {
