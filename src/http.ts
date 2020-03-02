@@ -30,31 +30,35 @@ export const createAxiosInstance = (url: string): AxiosInstance => {
 };
 
 // utility functions
-export const request = (
+export const request = <T = any>(
   url: string,
   configure: ConfigureInstanceRequest = identity,
-): AxiosPromise => createAxiosInstance(url)(configure({}));
+): AxiosPromise<T> => createAxiosInstance(url)(configure({}));
 
-export const get = (url: string, configure: ConfigureInstanceRequest = identity): AxiosPromise =>
-  createAxiosInstance(url).get(url, configure({}));
-
-export const post = (
+export const get = <T = any>(
   url: string,
-  data: any,
   configure: ConfigureInstanceRequest = identity,
-): AxiosPromise => createAxiosInstance(url).post(url, data, configure({}));
+): AxiosPromise<T> => createAxiosInstance(url).get(url, configure({}));
 
-export const patch = (
+export const post = <T = any>(
   url: string,
   data: any,
   configure: ConfigureInstanceRequest = identity,
-): AxiosPromise => createAxiosInstance(url).patch(url, data, configure({}));
+): AxiosPromise<T> => createAxiosInstance(url).post(url, data, configure({}));
 
-export const put = (
+export const patch = <T = any>(
   url: string,
   data: any,
   configure: ConfigureInstanceRequest = identity,
-): AxiosPromise => createAxiosInstance(url).put(url, data, configure({}));
+): AxiosPromise<T> => createAxiosInstance(url).patch(url, data, configure({}));
 
-export const del = (url: string, configure: ConfigureInstanceRequest = identity): AxiosPromise =>
-  createAxiosInstance(url).delete(url, configure({}));
+export const put = <T = any>(
+  url: string,
+  data: any,
+  configure: ConfigureInstanceRequest = identity,
+): AxiosPromise<T> => createAxiosInstance(url).put(url, data, configure({}));
+
+export const del = <T = any>(
+  url: string,
+  configure: ConfigureInstanceRequest = identity,
+): AxiosPromise<T> => createAxiosInstance(url).delete(url, configure({}));
