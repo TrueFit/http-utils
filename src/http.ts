@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import axios, {AxiosInstance, AxiosPromise} from 'axios';
 import {sharedConfig} from './configure';
